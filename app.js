@@ -137,5 +137,5 @@ app.delete("/todos/:todoId/", async (request, response) => {
         WHERE id = ${todoId};`;
 
   await db.run(deleteQuery);
-  response.send("Deleted");
+  response.send("Deleted Successfully");
 });
